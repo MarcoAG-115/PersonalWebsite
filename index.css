@@ -1,0 +1,94 @@
+@font-face { font-family: Roboto; src: url('Roboto-Regular.ttf'); } 
+@font-face { font-family: Rajdhani; src: url('Rajdhani-Medium.ttf'); } 
+@font-face { font-family: Play; src: url('Play-Regular.ttf'); } 
+@font-face { font-family: Play-Bold; font-weight: bold; src: url('Play-Bold.ttf');}
+
+/*centers content and removes unneeded whitespace*/
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: 0px;
+}
+
+/*aligns list to the left*/
+ul {
+    text-align: left;
+}
+
+/*change background colors for sections*/
+#about, #accomplishments {
+    background-color: #424246;
+    text-align: left;
+    margin: -30px;
+    padding: 100px;
+    color: #d4d9dd;
+}
+#services, #contact {
+    background-color: #d4d9dd;
+    text-align: right;
+    margin: -30px;
+    padding: 100px;
+    color: #424246;
+}
+
+/*change footing color and scaling*/
+#footer {
+    background-color: #424246;
+}
+#footer img {
+    width: 75px;
+    padding: 20px;
+}
+
+/*change font size*/
+p {
+    font-size: 1.5em;
+}
+h3{
+    font-size: 2em;
+}
+h2{
+    font-size: 2.5em;
+}
+
+/*edit links*/
+a {
+    color: black;
+}
+
+/*edit top navigation links*/
+#topNav {
+    background-color: #232323;
+    margin-bottom: 30px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+#topNav a {
+    color: #d4d9dd;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+#topNav a:hover {
+    color: black;
+    background-color: #616161;
+}
+
+/*provides a different configuration for smaller screens*/
+@media screen and (max-width: 900px) {
+    #topNav a {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        display: block;
+    }
+    #topNav {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #about, #services, #contact, #accomplishments {
+        padding: 40px;
+    }
+}
