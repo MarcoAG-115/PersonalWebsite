@@ -10,6 +10,7 @@ body {
     padding: 0px;
     outline: none;
     border: 0px;
+    overflow-x:hidden /*allows background to go entire width of screen*/
 }
 
 /*aligns list to the left*/
@@ -19,23 +20,25 @@ ul {
 
 /*change background colors for sections*/
 #about, #accomplishments {
-    background-color: #424246;
+    background-color: #2f2f30;
     text-align: left;
     margin: -30px;
     padding: 100px;
     color: #d4d9dd;
 }
 #services, #contact {
-    background-color: #d4d9dd;
+    background-color: #202324;
     text-align: right;
     margin: -30px;
     padding: 100px;
-    color: #424246;
+    color: #d4d9dd;
 }
 
 /*change footing color and scaling*/
 #footer {
-    background-color: #424246;
+    background-color: #2f2f30;
+    color: #d4d9dd;
+    padding-bottom: 2em;
 }
 #footer img {
     width: 75px;
@@ -51,16 +54,29 @@ h3{
 }
 h2{
     font-size: 2.5em;
+    background-color: black;
+    color: #d4d9dd;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 4em;
+    padding-top: 1em;
+}
+h1{
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 /*edit links*/
 a {
-    color: black;
+    color: rgb(248, 248, 248);
 }
 
 /*edit top navigation links*/
 #topNav {
-    background-color: #232323;
+    background-color:black;
     margin-bottom: 30px;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -74,7 +90,7 @@ a {
 }
 #topNav a:hover {
     color: black;
-    background-color: #616161;
+    background-color: #2b343d;
 }
 
 /*provides a different configuration for smaller screens*/
@@ -91,4 +107,12 @@ a {
     #about, #services, #contact, #accomplishments {
         padding: 40px;
     }
+}
+
+/*photo edit*/
+#photo {
+    width: 100%;
+    height: 500px;
+    margin-top: -30px;
+    margin-bottom: -10px;
 }
