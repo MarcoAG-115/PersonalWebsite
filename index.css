@@ -12,6 +12,9 @@ body {
     border: 0px;
     overflow-x:hidden; /*allows background to go entire width of screen*/
 }
+head {
+    overflow-x:hidden;
+}
 
 /*aligns list to the left*/
 ul {
@@ -101,6 +104,7 @@ a {
         padding-top: .5em;
         padding-bottom: .5em;
         display: block;
+        overflow-x:hidden;
     }
     #topNav {
         padding-top: 0px;
@@ -109,6 +113,7 @@ a {
     }
     #about, #services, #contact, #accomplishments {
         padding: 40px;
+        overflow-x:hidden;
     }
 }
 
