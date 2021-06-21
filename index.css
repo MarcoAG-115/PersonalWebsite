@@ -87,9 +87,20 @@ a {
         padding: 40px;
         overflow-x:hidden;
     }
+    .banner-btn {
+        text-align: left;
+    }
     .banner-btn a {
         display: block;
         margin: 20px auto;
+        text-align: center;
+    }
+    .introTitle h1{
+        text-align: left;
+        font-size: 65px;
+    }
+    .introTitle {
+        text-align: left;
     }
 }
 
