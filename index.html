@@ -3,7 +3,9 @@
 <head>
     <title style="overflow-x:hidden;">Marco Gonzalez</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <style>
     @font-face { font-family: Play; src: url('Roboto-Regular.ttf'); } 
@@ -30,6 +32,10 @@
     a {
         font-family: Roboto
     }
+    @font-face { font-family: Play; src: url('Roboto-Regular.ttf'); } 
+    small {
+        font-family: Roboto
+    }
 </style>
 <body>
 
@@ -37,83 +43,259 @@
 
 <!--<h1 style="font-size:60px;text-align:center;border:2px solid rgb(236, 16, 200);">Marco Gonzalez</h1>-->
 
-<h1 style="font-size:60px;text-align:center;background-color:black;color:white;">Marco Gonzalez</h1>
-
-<!--creates subtitle-->
-
-<h2 style="font-family:Roboto;"><ins>Welcome</ins></h2>
-
-<!--creates website divisions / sections-->
-
-<div id="topNav">
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#accomplishments">Accomplishments</a>
-    <a href="#contact">Contact</a>
-</div>
-<div id="main">
-    <img id="photo" src="Judys_Apartment.PNG" alt="CP2077 Night City Skyline">
-    <div id="about">
-        <h3>About</h3>
-        <!--provide a summary about yourself / link to page containing accomoplishments-->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. 
-            Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Rutrum 
-            tellus pellentesque eu tincidunt tortor. Lectus vestibulum mattis ullamcorper 
-            velit. Mattis enim ut tellus elementum sagittis vitae et. Iaculis urna id volutpat 
-            lacus laoreet non curabitur gravida arcu. Sodales ut etiam sit amet. Arcu bibendum 
-            at varius vel pharetra vel turpis nunc. Sapien faucibus et molestie ac feugiat sed. 
-            Nunc pulvinar sapien et ligula ullamcorper. Libero justo laoreet sit amet.
-            <a href="#accomplishments">accomplishments</a>.
-        </p>
-    </div>
-    <div id="services">
-        <h3>Services</h3>
-        <!--descripe your abilities, talents, experience, career / link to page containing contact info-->
-        <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace 
-            holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. 
-            Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.
-            <a href="#contact">here</a>.
-        </p>
+<div class="titleBar">
+    <div class="menuBar">
+        <div class="dropdown" style="float:right;">
+            <!--<button type="button" class="menu"></button>
+            <div class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#accomplishments">Accomplishments</a>
+            <a href="#contact">Contact</a>
+            </div>
+        -->
         </div>
-    <div id="accomplishments">
-        <h3>Accomplishments</h3>
-        <!--provide a list of your accomplishments along with a brief intro-->
-        <p>Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver 
-            me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. 
-            Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.</p>
+    </div>
+    <div class="introTitle">
+        <small>Programmer & Designer</small>
+        <h1>Marco<br>Gonzalez</h1>
+        <div class="banner-btn">
+            <a href="#about"><span></span>Learn About Me</a>
+        </div>
+        <!--<a href="#about"><span></span><button type="button" class="intro-button">Learn About Me</button></a>-->
+    </div>
+    <div class="side-bar">
+
+        <div class="social-links">
+            <a href="https://github.com/MarcoAG-115"><img src="github_icon.png" alt="GitHub Icon"></a>
+            <a href="https://www.linkedin.com/in/marco-a-g/"><img src="LinkedIn_icon.png" alt="LinkedIn Icon"></a>
+        </div>
+
+        <div class="useful-links">
+            <img src="share_icon.png" alt="Share Icon">
+            <a href="#about"><img src="info_icon.png" alt="More Info Icon"></a>
+        </div>
+    </div>
+</div>
+
+<!--actual side bar menu-->
+<div id="sideNav">
+    <nav>
         <ul>
-            <li>Dredgen</li>
-            <li>Warden</li>
-            <li>Forerunner</li>
-            <li>Wayfarer</li>
-            <li>MMXX</li>
-            <li>Solo Netrunner</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutMe">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#testimonials">Accomplishments</a></li>
+            <li><a href="#newfooter">Contact</a></li>
         </ul>
-        </div>
-    <div id="contact">
-        <h3>Contact</h3>
-        <!--provide contact info along with info on how to contact-->
-        <p>Drake Equation realm of the galaxies with pretty stories for which there's little good evidence 
-            something incredible is waiting to be known rich in heavy atoms rogue. Invent the universe concept 
-            of the number one a still more glorious dawn awaits the only home we've ever known are creatures 
-            of the cosmos emerged into consciousness. The ash of stellar alchemy muse about the sky calls to 
-            us globular star cluster bits of moving fluff muse about and billions upon billions upon billions 
-            upon billions upon billions upon billions upon billions.
-        </p>
-        <p>Phone: +1(350)420-6969</p>
-        <p>Email: saganC69@yahoo.com</p>
+    </nav>
+</div>
+
+<!--actual menu button-->
+<div id="menuBtn">
+    <img src="menu_icon.png" id="menu">
+</div>
+
+<!--about section-->
+<section id="aboutMe">
+    <div class="title-text">
+        <p>ABOUT</p>
+        <h3>Get An Idea Of Who I Am</h3>
     </div>
-</div>
-<div id="footer">
-    <!--adds icons / links to related social media sites-->
-    <a href="https://github.com/MarcoAG-115"><img src="github_icon.png" alt="GitHub Icon"></a>
-    <a href="https://www.linkedin.com/in/marco-a-g/"><img src="LinkedIn_icon.png" alt="LinkedIn Icon"></a>
-    <!--copywrite line which states who created and owns the website-->
-    <p style="font-size: 15px;">© 2021 Marco Gonzalez</p>
-</div>
+    <div class="feature-box">
+        <div class="features">
+            <h3>Dredgen</h3>
+            <div class="features-desc">
+                <div class="feature-icon">
+                    <i class="fa fa-laptop"></i>
+                </div>
+                <div class="feature-text">
+                    <p>Birth finite but unbounded billions upon billions concept of 
+                        the number one worldlets culture.</p>
+                </div>
+            </div>
+            <h3>Warden</h3>
+            <div class="features-desc">
+                <div class="feature-icon">
+                    <i class="fa fa-terminal"></i>
+
+                </div>
+                <div class="feature-text">
+                    <p>The ash of stellar alchemy citizens of distant epochs the sky 
+                        calls to us stirred by starlight of brilliant syntheses astonishment.</p>
+                </div>
+            </div>
+            <h3>Wayfarer</h3>
+            <div class="features-desc">
+                <div class="feature-icon">
+                    <i class="fa fa-globe"></i>
+
+                </div>
+                <div class="feature-text">
+                    <p>Made in the interiors of collapsing stars Vangelis extraordinary claims require 
+                        extraordinary evidence a mote of dust suspended in a sunbeam vastness is bearable 
+                        only through love two ghostly white figures in coveralls and helmets are softly dancing?</p>
+                </div>
+            </div>
+        </div>
+        <div class="features-img">
+            <img src="thanos.jpg" alt="Thanos Smiling">
+        </div>
+    </div>
+</section>
+
+<!--services section-->
+
+<section id="service">
+    <div class="title-text">
+        <p>SERVICES</p>
+        <h3>Experience & Skills</h3>
+    </div>
+    <div class="service-box">
+        <div class="single-service">
+            <img src="desk_assembly.png" alt="SolidWorks Assembly">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>3D Modeling</h3>
+                <hr>
+                <p>upon billions upon billions upon billions upon billions upon billions.</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="device_diagnosis.webp" alt="Windows Settings Menu">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Device Diagnostics</h3>
+                <hr>
+                <p>upon billions upon billions upon billions upon billions upon billions.</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="programming_pic.png" alt="VS Code Workspace">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Programming</h3>
+                <hr>
+                <p>upon billions upon billions upon billions upon billions upon billions.</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="interpreter_icon.png" alt="Speech Bubble Icons">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Interpreter</h3>
+                <hr>
+                <p>upon billions upon billions upon billions upon billions upon billions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--accomplishments section-->
+
+<section id="testimonials">
+    <div class="title-text">
+        <p>ACCOMPLISHMENTS</p>
+        <h3>Programs & Awards</h3>
+    </div>
+    <div class="testimonial-row">
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="award1.png" alt="Image of Award">
+                <div class="user-info">
+                    <h4>Award 1 <i class="fa fa-trophy"></i>
+                    </h4>
+                    <small>link to award 1</small>
+                </div>
+            </div>
+            <p>Vastness is bearable only through love invent the universe the carbon in our apple 
+                pies hearts of the stars venture permanence of the stars. Citizens of distant epochs 
+                vanquish the impossible the only home we've ever known not a sunrise but a galaxyrise 
+                descended from astronomers from which we spring. </p>
+        </div>
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="award2.png" alt="Image of Award">
+                <div class="user-info">
+                    <h4>Award 2 <i class="fa fa-trophy"></i>
+                    </h4>
+                    <small>link to award 2</small>
+                </div>
+            </div>
+            <p>Gathered by gravity encyclopaedia galactica take root and flourish two ghostly white figures 
+                in coveralls and helmets are softly dancing shores of the cosmic ocean great turbulent clouds. </p>
+        </div>
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="award3.png" alt="Image of Award">
+                <div class="user-info">
+                    <h4>Award 3 <i class="fa fa-trophy"></i>
+                    </h4>
+                    <small>link to award 3</small>
+                </div>
+            </div>
+            <p>Concept of the number one star stuff harvesting star light the carbon in our apple pies venture 
+                invent the universe two ghostly white figures in coveralls and helmets are softly dancing and 
+                billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
+        </div>
+    </div>
+</section>
+
+<!--new footer-->
+
+<section id="newfooter">
+    <img src="temp_logo.png" alt="logo" class="footer-img">
+    <div class="title-text">
+        <p>CONTACT</p>
+        <h3>Let's Talk</h3>
+    </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h3>Availability</h3>
+            <p><i class="fa fa-calendar"></i>
+                Monday to Friday - 12:00pm to 5:00pm</p>
+        </div>
+        <div class="footer-right">
+            <h3>Get In Touch</h3>
+            <p><i class="fa fa-envelope"></i>
+                Email: saganC69@yahoo.com</p>
+            <p><i class="fa fa-phone"></i>
+                Phone: +1(350)420-6969</p>
+        </div>
+    </div>
+
+    <div class="newsocial-links">
+        <a href="https://github.com/MarcoAG-115"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/marco-a-g/"><i class="fab fa-linkedin"></i></a>
+        <p>© 2021 Marco Gonzalez</p>
+    </div>
+
+</section>
+
+<script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+    var menu = document.getElementById("menu");
+
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if (sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "exit_icon.png";
+        }
+        else {
+            sideNav.style.right = "-250px";
+            menu.src = "menu_icon.png";
+        }
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	    speed: 1000,
+	    speedAsDuration: true
+    });
+</script>
 
 </body>
 </html>
