@@ -10,7 +10,7 @@ body {
     padding: 0px;
     outline: none;
     border: 0px;
-    overflow-x:hidden /*allows background to go entire width of screen*/
+    overflow-x:hidden; /*allows background to go entire width of screen*/
 }
 
 /*aligns list to the left*/
@@ -39,6 +39,7 @@ ul {
     background-color: #2f2f30;
     color: #d4d9dd;
     padding-bottom: 2em;
+    overflow-x:hidden;
 }
 #footer img {
     width: 75px;
@@ -80,6 +81,7 @@ a {
     margin-bottom: 30px;
     padding-top: 2em;
     padding-bottom: 2em;
+    overflow-x:hidden;
 }
 #topNav a {
     color: #d4d9dd;
@@ -103,6 +105,7 @@ a {
     #topNav {
         padding-top: 0px;
         padding-bottom: 0px;
+        overflow-x:hidden;
     }
     #about, #services, #contact, #accomplishments {
         padding: 40px;
@@ -115,4 +118,5 @@ a {
     height: 500px;
     margin-top: -30px;
     margin-bottom: -10px;
+    overflow-x:hidden;
 }
