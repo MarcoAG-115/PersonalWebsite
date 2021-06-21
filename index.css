@@ -4,7 +4,7 @@
 @font-face { font-family: Play-Bold; font-weight: bold; src: url('Play-Bold.ttf');}
 
 /*centers content and removes unneeded whitespace*/
-body {
+html, body {
     text-align: center;
     margin: 0px;
     padding: 0px;
