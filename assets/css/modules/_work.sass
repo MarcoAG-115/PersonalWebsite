@@ -1,0 +1,444 @@
+.work
+  position: relative
+  display: flex
+  width: 960px
+  max-width: 80%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+
+  @media (max-width: 1180px)
+    max-width: 100%
+
+  // button
+  //   top: 10px
+  //   position: relative
+  //   padding: 5px 17px 5px 12px
+  //   font-weight: 700
+  //   text-transform: uppercase
+  //   background-color: $highlight
+  //   border: none
+
+  //   &:hover
+  //     background-color: rgb(143, 0, 0)
+  //     padding: 5px 17px 5px 12px  
+  button
+    // opacity: 0
+    // padding: 5px 17px 5px 12px 
+    border: none   
+
+  .modal-container 
+    background-color:rgba(0, 0, 0, 0)
+    display: flex
+    align-items: center
+    justify-content: center
+    position: fixed
+    opacity: 0
+    pointer-events: none
+    top: 20px
+    left: 0
+    z-index: 1
+    height: 100vh
+    width: 100vw
+    transition: opacity 0.3s ease
+  
+
+  .modal-container.show
+    pointer-events: auto
+    opacity: 1
+
+  .work--lockup.blur
+    filter: blur(5px)
+
+  .page2title.blur
+    filter: blur(5px)
+  
+
+  .modal 
+    background-color: #111010fb
+    border-radius: 40px
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8)
+    // padding: 30px 50px
+    padding: 50px 50px
+    width: 900px
+    height: 520px
+    max-width: 100%
+    text-align: left
+
+    p
+      color: $white
+      font-size: 15px
+    
+    img
+      width: 385px
+      height: 515px
+      top: -50px
+      float: left
+      margin: 0 20px 0 15px
+      border-radius: 10px
+      box-shadow: 3px 6px 6px rgba(32, 32, 32, 0.2)
+    
+    button
+      position: relative
+      padding: 5px 17px 5px 12px
+      font-weight: 700
+      text-transform: uppercase
+      background-color: $highlight
+      border: none
+
+      .btn-background
+        position: absolute
+        top: 0
+        left: 23px
+        right: 0
+        height: 100%
+        background-color: $highlight
+        z-index: -1
+        transition: left .2s ease-in-out
+
+      &:hover
+        background-color: rgb(143, 0, 0)
+        padding: 6px 18px 6px 13px
+        .btn-background
+          left: 0
+
+      &:focus
+        outline: none
+
+      svg
+        position: relative
+        left: 5px
+        width: 15px
+        fill: $white
+
+  h2
+    margin: 0 0 20px 0
+    font-size: 30px
+    text-align: center
+
+  &--lockup
+    position: relative
+
+    .slider
+      position: relative
+      display: flex
+      width: 80%
+      margin: 0 auto
+      padding: 0
+      list-style: none
+
+      &--item
+        position: absolute
+        display: none
+        text-align: center
+
+        a
+          text-decoration: none
+          color: #858585
+
+        &-title
+          margin-top: 10px
+          //margin-bottom: 50px
+          font-size: 12px
+          font-weight: 700
+          text-transform: uppercase
+          // added stuff below
+          //background-color: rgba(0, 4, 255, 0.384)
+          // margin-left: 95px
+          // margin-right: 95px
+          // border-radius: 20px
+
+        &-description
+          display: none
+          max-width: 250px
+          margin: 0 auto
+
+        &-image
+          width: 150px
+          height: 185px // changes sizes of left & right images
+          margin: 0 auto
+          border-radius: 5%
+          overflow: hidden
+
+          img
+            width: 100%
+
+        &-left
+          top: 50%
+          left: 0
+          transform: translateY(-50%)
+          display: block
+
+        &-right
+          top: 50%
+          right: 0
+          transform: translateY(-50%)
+          display: block
+          position: absolute
+          z-index: -11
+
+        &-center
+          position: relative
+          top: 30px
+          left: 50%
+          transform: translateX(-50%)
+          display: block
+
+          a
+            color: $white
+
+          .slider--item-title
+            margin-top: 25px
+            font-size: 16px
+
+          .slider--item-description
+            display: block
+
+          .slider--item-image
+            width: 300px
+            height: 375px // changes sizes of center image
+          
+
+    .slider--next,
+    .slider--prev
+      position: absolute
+      top: 160px
+      display: flex
+      width: 50px
+      height: 50px
+      align-items: center
+      justify-content: center
+      background-color: $muted-gray
+      border-radius: 50%
+      cursor: pointer
+
+      svg
+        width: 20px
+        fill: $white
+
+    .slider--next
+      right: 0
+
+    .slider--prev
+      left: 0
+
+@media (max-width: 900px)
+
+  .work
+
+    
+
+    &--lockup
+
+      .slider
+
+        &--item
+
+          &-image
+            width: 120px
+            height: 120px
+
+          &-center
+
+            .slider--item-image
+              width: 240px
+              height: 240px
+
+      .slider--next,
+      .slider--prev
+        top: 130px
+
+    .modal-container 
+    background-color:rgba(0, 0, 0, 0)
+    display: flex
+    align-items: center
+    justify-content: center
+    position: fixed
+    opacity: 0
+    pointer-events: none
+    top: 20px
+    left: 0
+    z-index: 1
+    height: 50vh
+    width: 50vw
+    transition: opacity 0.3s ease
+  
+
+  .modal-container.show
+    pointer-events: auto
+    opacity: 1
+
+  .work--lockup.blur
+    filter: blur(5px)
+
+  .page2title.blur
+    filter: blur(5px)
+  
+
+  .modal 
+    background-color: #111010fb
+    border-radius: 40px
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8)
+    // padding: 30px 50px
+    padding: 50px 50px
+    width: 600px
+    height: 220px
+    max-width: 100%
+    text-align: left
+
+    p
+      color: $white
+    
+    img
+      width: 200px
+      height: 415px
+      top: -50px
+      float: left
+      margin: 0 20px 0 15px
+      border-radius: 10px
+      box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2)
+
+@media (max-width: 767px)
+
+  .work
+
+    &--lockup
+
+      .slider
+        width: 75%
+
+        &--item
+
+          &-image
+            width: 90px
+            height: 90px
+
+          &-center
+
+            .slider--item-image
+              width: 190px
+              height: 190px
+
+      .slider--next,
+      .slider--prev
+        top: 105px
+
+    .modal-container 
+      background-color:rgba(0, 0, 0, 0)
+      display: flex
+      align-items: center
+      justify-content: center
+      position: fixed
+      opacity: 0
+      pointer-events: none
+      top: 20px
+      left: 0
+      z-index: 1
+      height: 30vh
+      width: 30vw
+      transition: opacity 0.3s ease
+  
+
+    .modal-container.show
+      pointer-events: auto
+      opacity: 1
+
+    .work--lockup.blur
+      filter: blur(5px)
+
+    .page2title.blur
+      filter: blur(5px)
+    
+
+    .modal 
+      background-color: #111010fb
+      border-radius: 40px
+      // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.8)
+      // padding: 30px 50px
+      padding: 50px 50px
+      width: 500px
+      height: 120px
+      max-width: 100%
+      text-align: left
+
+      p
+        color: $white
+      
+      img
+        width: 200px
+        height: 415px
+        top: -50px
+        float: left
+        margin: 0 20px 0 15px
+        border-radius: 10px
+        box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2)
+
+@media (max-width: 600px)
+
+  .work
+
+    &--lockup
+
+      .slider
+        width: auto
+
+        &--item
+
+          &-left,
+          &-right
+            display: none
+
+    .modal-container 
+      background-color:rgba(0, 0, 0, 0)
+      display: flex
+      align-items: center
+      justify-content: center
+      position: fixed
+      opacity: 0
+      pointer-events: none
+      top: 20px
+      left: 0
+      z-index: 1
+      height: 30vh
+      width: 30vw
+      transition: opacity 0.3s ease
+  
+
+    .modal-container.show
+      pointer-events: auto
+      opacity: 1
+
+    .work--lockup.blur
+      filter: blur(5px)
+
+    .page2title.blur
+      filter: blur(5px)
+    
+
+    .modal 
+      background-color: #111010fb
+      border-radius: 40px
+      // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.8)
+      // padding: 30px 50px
+      padding: 50px 50px
+      width: 500px
+      height: 120px
+      max-width: 100%
+      text-align: left
+
+      p
+        color: $white
+      
+      img
+        width: 100px
+        height: 315px
+        top: -50px
+        float: left
+        margin: 0 20px 0 15px
+        border-radius: 10px
+        box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2)

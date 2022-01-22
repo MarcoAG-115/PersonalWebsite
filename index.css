@@ -57,9 +57,14 @@ ul {
 /*change font size*/
 p {
     font-size: 1.5em;
+    color:white;
+}
+h4 {
+    color:white;
 }
 h3{
     font-size: 2em;
+    color:white;
 }
 h2{
     font-size: 2.5em;
@@ -139,7 +144,7 @@ a {
     width: 50px;
     height: 100vh;
     background: rgba(219, 215, 215, 0.308);
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
 }
@@ -211,7 +216,7 @@ a {
 }
 
 .banner-btn a:hover {
-    color: black;
+    color: #0a57e6da;
 
 }
 
@@ -263,6 +268,7 @@ nav ul li a {
 #aboutMe {
     width: 100%;
     padding: 70px 0;
+    background: black;
 }
 
 .title-text {
@@ -272,8 +278,8 @@ nav ul li a {
 
 .title-text p {
     margin: auto;
-    font-size: 20px;
-    color:black;
+    font-size: 25px;
+    color:white;
     font-weight: bold;
     position: relative;
     z-index: 1;
@@ -282,16 +288,18 @@ nav ul li a {
 
 .title-text p::after {
     content: '';
-    width: 50px;
-    height: 35px;
-    background: linear-gradient(#019587,#fff);
+    width: 10px;
+    height: 40px;
+    background: linear-gradient(#013595ab,rgba(216, 51, 51, 0.616));
     position: absolute;
-    top: -20px;
-    left: 0;
+    top: -5px;
+    left: -20px;
     z-index: -1;
-    transform: rotate(10deg);
-    border-top-left-radius: 35px;
-    border-bottom-right-radius: 35px;
+    transform: rotate(180deg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 10px;
 }
 
 .title-text h3 {
@@ -327,7 +335,7 @@ nav ul li a {
     text-align: left;
     margin-bottom: 10px;
     font-weight: 100;
-    color: black;
+    color: white;
 }
 
 .features-desc {
@@ -342,8 +350,8 @@ nav ul li a {
     font-size: 30px;
     line-height: 50px;
     border-radius: 8px;
-    color: rgb(41, 1, 1);
-    border: 1px solid black;
+    color: rgb(187, 4, 4);
+    border: 1px solid white;
 }
 
 .feature-text p {
@@ -372,11 +380,11 @@ nav ul li a {
 #service {
     width: 100%;
     padding: 70px 0;
-    background: #efefef;
+    background:black;
 }
 
 .service-box {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -393,18 +401,21 @@ nav ul li a {
 }
 
 .single-service img {
-    width: 100%;
+    width: 400px;
     border-radius: 7px;
 }
 
 .overlay {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    width: 402px;
+    /* height:100%; */
+    height: 300px;
+    left: 89.5px;
     position: absolute;
     top: 0;
     border-radius: 7px;
     cursor: pointer;
-    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    background: linear-gradient(rgba(168, 0, 0, 0.5),#002896);
     opacity: 0;
     transition: 1s;
 }
@@ -414,7 +425,7 @@ nav ul li a {
 }
 
 .service-desc {
-    width: 80%;
+    width: 60%;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -436,7 +447,7 @@ hr {
 }
 
 .single-service:hover .service-desc {
-    bottom: 40%;
+    bottom: 10%;
     opacity: 1;
 }
 
@@ -461,6 +472,7 @@ hr {
 #testimonials {
     width: 100%;
     padding: 70px 0;
+    background:black;
 }
 
 .testimonial-row {
@@ -477,8 +489,8 @@ hr {
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
-    box-shadow: 0 10px 20px 3px #00968814;
-    cursor: pointer;
+    box-shadow: 0 10px 20px 3px rgba(168, 0, 0, 0.5);
+    /* cursor: pointer; */
     transition: transform .5s;
 }
 
@@ -494,7 +506,7 @@ hr {
 
 .user img {
     width: 40px;
-    margin-right: 20px;
+    margin-right: 10px;
     border-radius: 3px;
 }
 
@@ -505,7 +517,8 @@ hr {
 }
 
 .user-info small {
-    color: #009688;
+    /* color: #009688; */
+    color:#0a57e6da;
 }
 
 .testimonial-col:hover {
@@ -522,8 +535,8 @@ hr {
 
 #newfooter {
     padding: 100px 0 20px;
-    background: #efefef;
-    position: relative;
+    background:black;
+    /* position: relative; */
 }
 
 .footer-row {
@@ -558,16 +571,17 @@ hr {
 
 .footer-left .fa, .footer-right .fa {
     font-size: 20px;
-    color: #009688;
+    /* color: #009688; */
+    color:#0a57e6da;
     margin: 1px;
 }
 
 .footer-img {
     max-width: 370px;
-    opacity: 0.1;
+    opacity: .2;
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 470%;
     transform: translate(-50%, -50%);
 }
 
@@ -580,15 +594,18 @@ hr {
     width: 40px;
     font-size: 20px;
     line-height: 40px;
-    border: 1px solid #009688;
+    /* border: 1px solid #009688; */
+    border: 1px solid #0a57e6da;
     margin: 40px 5px 0;
-    color: #009688;
+    /* color: #009688; */
+    color:#0a57e6da;
     cursor: pointer;
     transition: .5s;
 }
 
 .newsocial-links .fab:hover {
-    background: #009688;
+    /* background: #009688; */
+    background:rgb(146, 0, 0);
     color: #fff;
     transform: translateY(-7px);
 }
@@ -606,4 +623,14 @@ hr {
     .footer-img {
         top: 25%;
     }
+}
+
+.perslogo {
+    max-width: 100px;
+    opacity: .4;
+    position: fixed;
+    left: 5%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    cursor:pointer;
 }
