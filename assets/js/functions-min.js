@@ -25,6 +25,9 @@ const open10 = document.getElementById('Open10');
 const open11 = document.getElementById('Open11');
 const open12 = document.getElementById('Open12');
 const open13 = document.getElementById('Open13');
+const open14 = document.getElementById('Open14');
+const open15 = document.getElementById('Open15');
+const open16 = document.getElementById('Open16');
 const modal_container = document.getElementById('modal_container');
 const modal_container2 = document.getElementById('modal_container2');
 const modal_container3 = document.getElementById('modal_container3');
@@ -38,6 +41,9 @@ const modal_container10 = document.getElementById('modal_container10');
 const modal_container11 = document.getElementById('modal_container11');
 const modal_container12 = document.getElementById('modal_container12');
 const modal_container13 = document.getElementById('modal_container13');
+const modal_container14 = document.getElementById('modal_container14');
+const modal_container15 = document.getElementById('modal_container15');
+const modal_container16 = document.getElementById('modal_container16');
 const close = document.getElementById('close');
 const close2 = document.getElementById('close2');
 const close3 = document.getElementById('close3');
@@ -51,6 +57,9 @@ const close10 = document.getElementById('close10');
 const close11 = document.getElementById('close11');
 const close12 = document.getElementById('close12');
 const close13 = document.getElementById('close13');
+const close14 = document.getElementById('close14');
+const close15 = document.getElementById('close15');
+const close16 = document.getElementById('close16');
 
 Open.addEventListener('click', () => {
   modal_container.classList.add('show');
@@ -207,3 +216,68 @@ close13.addEventListener('click', () => {
     $( '.work--lockup' ).removeClass( 'blur' );
     $( '.page2title' ).removeClass( 'blur' );
 });
+
+open14.addEventListener('click', () => {
+    modal_container14.classList.add('show');
+    $( '.about--banner' ).addClass( 'blur' );
+    $( '.page3title' ).addClass( 'blur' );
+});
+
+close14.addEventListener('click', () => {
+    modal_container14.classList.remove('show');
+    $( '.about--banner' ).removeClass( 'blur' );
+    $( '.page3title' ).removeClass( 'blur' );
+});
+
+open15.addEventListener('click', () => {
+    modal_container15.classList.add('show');
+    $( '.about--banner' ).addClass( 'blur' );
+    $( '.page3title' ).addClass( 'blur' );
+});
+
+close15.addEventListener('click', () => {
+    modal_container15.classList.remove('show');
+    $( '.about--banner' ).removeClass( 'blur' );
+    $( '.page3title' ).removeClass( 'blur' );
+});
+
+open16.addEventListener('click', () => {
+    modal_container16.classList.add('show');
+    $( '.about--banner' ).addClass( 'blur' );
+    $( '.page3title' ).addClass( 'blur' );
+});
+
+close16.addEventListener('click', () => {
+    modal_container16.classList.remove('show');
+    $( '.about--banner' ).removeClass( 'blur' );
+    $( '.page3title' ).removeClass( 'blur' );
+});
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 

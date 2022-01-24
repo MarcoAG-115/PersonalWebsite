@@ -713,7 +713,7 @@ body {
 
 .intro--banner h1 {
   position: relative;
-  font-size: 55px;
+  font-size: 68px;
   font-weight: 900;
   line-height: 1;
   z-index: 1;
@@ -1005,7 +1005,8 @@ body {
 
 .work h2 {
   margin: 0 0 20px 0;
-  font-size: 30px;
+  font-size: 68px;
+  line-height: 1;
   text-align: center;
 }
 
@@ -1376,33 +1377,200 @@ body {
   }
 }
 
+.about .modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  top: 20px;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.about .modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.about .about--banner.blur {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.about .page3title.blur {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.about .modal {
+  background-color: #111010fb;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+  padding: 50px 50px;
+  width: 900px;
+  height: 520px;
+  max-width: 100%;
+  text-align: left;
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+
+.about .modal a {
+  color: #fff;
+}
+
+.about .modal .slideshow-container {
+  max-width: 380px;
+  position: relative;
+  margin: 10px 0 0 0;
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+}
+
+.about .modal .slideshow-container .mySlides {
+  display: none;
+  /* Caption text */
+  /* Number text (1/3 etc) */
+}
+
+.about .modal .slideshow-container .mySlides .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.about .modal .slideshow-container .mySlides .numbertext {
+  color: #ff29e2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.about .modal .slideshow-container .prev, .about .modal .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.about .modal .slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.about .modal .slideshow-container .prev:hover, .about .modal .slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.about .modal .dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px 0 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.about .modal .active, .about .modal .dot:hover {
+  background-color: #717171;
+}
+
+.about .modal .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.about .modal a[target="_blank"]:after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABmJLR0QA/wD/AP+gvaeTAAAAlUlEQVQYlY2PsQkCURBE3+oVoMGVcCbagnUYKQaWYCsanbVcDYI2YCycBsbP5B/8OxUcWHYZHjMs/KkAUNfAJvN3QJ3uc0TsSWCjVuo0zVhdqje1ARhlKY+IaCOiBSrgAGx7/SmxTPdCvaRdqLMPUJ13UPLLrroYPPcCVhFxHX6dgxPgDjzVaeb1wBNwHKYk1T/873oD081cngZ/QiYAAAAASUVORK5CYII=);
+  margin: 0 3px 0 5px;
+}
+
+.about .modal p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.about .modal button {
+  position: relative;
+  padding: 5px 17px 5px 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #0f33ff;
+  border: none;
+}
+
+.about .modal button .btn-background {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  right: 0;
+  height: 100%;
+  background-color: #0f33ff;
+  z-index: -1;
+  -webkit-transition: left .2s ease-in-out;
+  transition: left .2s ease-in-out;
+}
+
+.about .modal button:hover {
+  background-color: #8f0000;
+  padding: 6px 18px 6px 13px;
+}
+
+.about .modal button:hover .btn-background {
+  left: 0;
+}
+
+.about .modal button:focus {
+  outline: none;
+}
+
+.about .modal button svg {
+  position: relative;
+  left: 5px;
+  width: 15px;
+  fill: #fff;
+}
+
 .about--banner {
   position: relative;
   height: 475px;
-}
-
-.about--banner::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 200px;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
-  border: 5px solid #0f33ff;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-}
-
-.about--banner::after {
-  content: "";
-  position: absolute;
-  top: 75px;
-  left: 400px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  width: 10px;
-  height: 10px;
-  background-color: #0f33ff;
 }
 
 .about--banner h2 {
@@ -1412,27 +1580,6 @@ body {
   font-weight: 900;
   line-height: 1;
   z-index: 1;
-}
-
-.about--banner h2::before {
-  content: "";
-  position: absolute;
-  top: 60px;
-  left: 268px;
-  width: 30px;
-  height: 30px;
-  background-color: #0f33ff;
-  border-radius: 50%;
-}
-
-.about--banner h2::after {
-  content: "";
-  position: absolute;
-  top: 255px;
-  left: 255px;
-  width: 10px;
-  height: 10px;
-  background-color: #0f33ff;
 }
 
 .about--banner a {
@@ -1458,16 +1605,21 @@ body {
 }
 
 .about--banner img {
-  position: absolute;
-  bottom: -90px;
-  right: -12px;
+  width: 2000px;
+  height: 1000px;
+  position: relative;
+  right: 500px;
+  top: -600px;
+  z-index: -100;
+  -webkit-filter: brightness(35%) blur(3px);
+          filter: brightness(35%) blur(3px);
 }
 
 .about--options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 600px;
+  max-width: 1000px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1478,35 +1630,35 @@ body {
 
 .about--options > a {
   position: relative;
-  width: 150px;
-  height: 75px;
+  width: 200px;
+  height: 125px;
   text-decoration: none;
   color: #fff;
-  border: 10px solid #0f33ff;
+  border: 8px solid #8f0000;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .about--options > a:nth-child(1) {
-  background-image: url("../img/about-winners.jpg");
+  background-image: url("../img/student_info_sys.png");
 }
 
 .about--options > a:nth-child(2) {
-  background-image: url("../img/about-philosophy.jpg");
+  background-image: url("../img/CrashDescPage_CrashFormApp.png");
 }
 
 .about--options > a:nth-child(3) {
-  background-image: url("../img/about-history.jpg");
+  background-image: url("../img/COMPpage_WIP.png");
 }
 
 .about--options > a:hover h3 {
-  bottom: -50px;
+  bottom: -85px;
 }
 
 .about--options h3 {
   position: absolute;
-  bottom: -38px;
+  bottom: -75px;
   left: 10px;
   font-size: 16px;
   text-transform: uppercase;
