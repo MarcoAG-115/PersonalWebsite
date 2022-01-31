@@ -1731,7 +1731,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/contact-visual.png");
+  background-image: url("../img/CrystalPalace_Shuttle.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1801,20 +1801,135 @@ body {
 }
 
 .contact--lockup .modal--options li:nth-child(1) {
-  background-color: #1769ff;
+  background-color: #280f83;
 }
 
 .contact--lockup .modal--options li:nth-child(2) {
-  background-color: #ea4c89;
+  background-color: #3395f0;
 }
 
 .contact--lockup .modal--options li:nth-child(3) {
   margin-bottom: 0;
-  background-color: #0f33ff;
+  background-color: #8f0000;
   text-transform: uppercase;
 }
 
 .contact--lockup .modal--options a {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.contact1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/IMG_3570.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact1--lockup {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  max-width: 75%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.contact1--lockup h1 {
+  position: relative;
+  margin-top: 35px;
+  margin-right: 30px;
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 1;
+}
+
+@media (max-width: 1180px) {
+  .contact1--lockup {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact1--lockup {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.contact1--lockup .modal1 {
+  padding: 45px 45px;
+  width: 1000px;
+  height: 400px;
+  text-align: left;
+  background-color: #0c0c0c;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75);
+          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact1--lockup .modal1--information p,
+.contact1--lockup .modal1--information a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 14px 0;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.contact1--lockup .modal1--information p {
+  margin-top: 0;
+}
+
+.contact1--lockup .modal1--options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact1--lockup .modal1--options > li {
+  width: 130px;
+  margin: 0 auto 25px auto;
+}
+
+.contact1--lockup .modal1--options li:nth-child(1) {
+  background-color: #280f83;
+}
+
+.contact1--lockup .modal1--options li:nth-child(2) {
+  background-color: #3395f0;
+}
+
+.contact1--lockup .modal1--options li:nth-child(3) {
+  margin-bottom: 0;
+  background-color: #8f0000;
+  text-transform: uppercase;
+}
+
+.contact1--lockup .modal1--options a {
   display: block;
   width: 100%;
   padding: 8px 0;
